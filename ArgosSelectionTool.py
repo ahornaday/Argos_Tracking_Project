@@ -1,0 +1,24 @@
+#-------------------------------------------------------------
+# ArgosSelectionTool.py
+#
+# Description: Reads in an Argos tracking data file and allows
+#   the user to identify the tracked sitings found within a 
+#   specified bounding box.
+#
+# Author: John Fay (john.fay@duke.edu)
+# Date:   Fall 2026
+#--------------------------------------------------------------
+
+# Create the geographic selection box
+the_box = {
+    'x_min' : 34.00,
+    'y_min' : -76.00,
+    'x_max' : 34.50,
+    'y_max' : -75.00
+}
+
+# Copy and paste a line of data as the lineString variable value
+lineString = '10154641232,true,2019-05-14 13:37:52.000,-75.49356999999998,34.86216,,0.0,-127.0,4.0167976787E8,5141.0,424,"40",34.86216,34.86216,"0",-75.49356999999998,-75.49356999999998,6,0,3,61.0,381.0,10718.0,2466.0,150,187,2,0,"1",,,"argos-doppler-shift","Pterodroma hasitata","174441","HA09","Satellite tracking of black-capped petrels, 2019"'
+
+# Use the split command to parse the items in lineString into a list object
+line_data = lineString
